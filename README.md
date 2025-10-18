@@ -1,5 +1,5 @@
 # LSTM‑SAM‑TL
-### Extreme Water Level Prediction with BiLSTM + Custom Attention and Transfer Learning
+### Long Short-Term Memory Station-Based Approximated Models and Transfer Learning
 
 This repository provides a compact, user‑friendly pipeline for training, validating, and evaluating sequence models for hourly water level prediction. It focuses on:
 
