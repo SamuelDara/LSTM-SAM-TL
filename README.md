@@ -9,22 +9,6 @@ This repository provides a compact, user‑friendly pipeline for training, valid
 
 ---
 
-## 🔎 Project Structure
-
-```
-.
-├── __init__.py                                          # Public entry points for import convenience
-├── layers.py                                            # CustomAttentionLayer (self‑attention over time)
-├── tt_model.py                                          # Train/Test pipeline + KerasTuner search + plots
-├── tscv_model.py                                        # Time‑Series CV (expanding window) + plots
-├── transfer_learning_test.py                            # Evaluate pre‑trained .h5 models (metrics + plots + CSV)
-├── transfer_learning_predict.py                         # Predict‑only runner for pre‑trained models (plots + CSV)
-├── utils.py                                             # Scaling + windowing helpers
-└── Model_training_&_transfer_learning.ipynb             # (Optional) interactive training notebook
-```
-
----
-
 ## ✨ What’s implemented
 
 - **BiLSTM ×3 + BatchNorm + Dropout** blocks
