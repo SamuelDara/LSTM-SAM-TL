@@ -27,6 +27,16 @@ This repository provides a compact, user‑friendly pipeline for training, valid
 ## 🧰 Installation
 
 > Requires Python ≥3.9 and TensorFlow ≥2.10 (tested with Keras/TensorFlow 2.x).
+---
+
+```bash
+# (Optional) create a clean env
+conda create -n cb_flooddy python=3.10 -y
+conda activate cb_flooddy
+
+# install from PyPI
+pip install Cb-FloodDy
+```
 
 ```bash
 pip install tensorflow keras-tuner scikit-learn numpy pandas matplotlib
