@@ -31,11 +31,11 @@ This repository provides a compact, user‑friendly pipeline for training, valid
 
 ```bash
 # (Optional) create a clean env
-conda create -n cb_flooddy python=3.10 -y
-conda activate cb_flooddy
+conda create -n LSTM-SAM-TL python=3.10 -y
+conda activate LSTM-SAM-TL
 
 # install from PyPI
-pip install Cb-FloodDy
+pip install LSTM-SAM-TL
 ```
 
 ```bash
