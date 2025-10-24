@@ -73,18 +73,18 @@ Date,Time (GMT),feat_1,feat_2,...,feat_N,WaterLevel
 ```python
 from LSTM_SAM_TL import TT_model
 
-res = TT_model(
-    csv_path="your_station.csv",
-    lookback=24,                  # sliding window length (hours)
-    epochs=300,
-    batch_size=128,
-    validation_split=0.3,         # random split *inside* the training windows
-    early_stopping=5,             # epochs to wait after no val improvement
-    max_trials=10,                # KerasTuner trials
-    loss="mae",                  # or "mse"
-    seed=42,                      # reproducibility
-    model_name="ATL",            # auto‑saves as ATL{batch}b{lookback}hTT.h5 if thresholds met
-    verbose=1,
+res1 = TT_model(
+    "ATLNJ1981-2022.csv",
+    lookback=24,               # sliding window length (hours)
+    epochs=2,                  
+    batch_size=512,
+    validation_split=0.2,      # portion of the data used to ensure accuracy of the training 
+    early_stopping=2,          # epochs to wait after no val improvement
+    max_trials=2,              # number of trials
+    loss="mae",                # loss function (or mse)
+    seed=42,                   # reproducibility
+    model_name="ATL",          # acronym to save the model. auto‑saves as ATL{batch}b{lookback}hTT.h5 if thresholds is met
+    verbose=1
 )
 print(res["metrics"], res.get("plot_path"))
 ```
